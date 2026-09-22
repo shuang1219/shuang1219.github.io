@@ -7,16 +7,15 @@
     * { box-sizing: border-box; }
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 20px 40px;
+      margin: 0;
+      padding: 0 0 40px;
       line-height: 1.6;
       background: #eafaf1;
       color: #1b4332;
     }
     nav {
       background: #4fc3f7;
-      margin: 0 -20px 30px;
+      width: 100%;
       padding: 16px 20px;
       display: flex;
       gap: 20px;
@@ -37,8 +36,19 @@
       background: #0288d1;
       color: #ffffff;
     }
-    section { margin-bottom: 40px; }
-    h1, h2 { color: #2d6a4f; }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px 0;
+    }
+    section {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+    h1, h2 { color: #2d6a4f; margin-top: 0; }
     .profile-pic {
       display: block;
       width: 140px;
@@ -57,40 +67,43 @@
     <a href="#projects">Projects</a>
   </nav>
 
-  <section id="home">
-    <img src="me.jpg" alt="Shuang's photo" class="profile-pic">
-    <h1>Hi, I'm Shuang 👋</h1>
-    <p>Welcome to my personal portfolio! I'm a student passionate about software development.</p>
-  </section>
+  <div class="container">
 
-  <section id="education">
-    <h2>Education / Experience</h2>
-    <ul>
-      <li><strong>NDSU</strong> — B.S. in Computer Science (expected 20XX)</li>
-      <li>Relevant coursework:
-        <ul>
-          <li>CSCI 474: Operating Systems Concepts</li>
-          <li>CSCI 489: Social Implications of Computers</li>
-          <li>CSCI 713: Software Development Processes</li>
-          <li>CSCI 741: Algorithm Analysis</li>
-        </ul>
-      </li>
-      <li>Plant Science Research Assistant</li>
-      <li>Computer Science Research Assistant</li>
-    </ul>
-  </section>
+    <section id="home">
+      <img src="me.jpg" alt="Shuang's photo" class="profile-pic">
+      <h1>Hi, I'm Shuang 👋</h1>
+      <p>Welcome to my personal portfolio! I'm a student passionate about software development.</p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Bushel Capstone Project</strong> — A team capstone project developing a customer support and configuration dashboard for Bushel, a technology-enabled business platform. Built with React and Chakra UI following Figma designs. The application lets support staff look up companies by slug and view merged customer data pulled from multiple mock APIs (Aggregator, Legacy CRM, and ConfigCat), and compare configuration values across systems to quickly diagnose account issues. As part of a 4-person team, I led implementation of the configuration tables and reusable data-table components, handled row rendering and layout systems, and contributed to risk planning and API integration.
-      </li>
-      <li>
-        <strong>To-Do List App</strong> — A responsive to-do list web app built with HTML, CSS, and JavaScript, developed using AI coding tools. Supports adding, completing, deleting, and filtering tasks (All / Active / Completed). <a href="https://github.com/shuang1219/todo-list-app" target="_blank">View on GitHub</a>
-      </li>
-    </ul>
-  </section>
+    <section id="education">
+      <h2>Education / Experience</h2>
+      <ul>
+        <li><strong>NDSU</strong> — B.S. in Computer Science (expected 20XX)</li>
+        <li>Relevant coursework:
+          <ul>
+            <li>CSCI 474: Operating Systems Concepts</li>
+            <li>CSCI 489: Social Implications of Computers</li>
+            <li>CSCI 713: Software Development Processes</li>
+            <li>CSCI 741: Algorithm Analysis</li>
+          </ul>
+        </li>
+        <li>Plant Science Research Assistant</li>
+        <li>Computer Science Research Assistant</li>
+      </ul>
+    </section>
 
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Bushel Capstone Project</strong> — A team capstone project developing a customer support and configuration dashboard for Bushel, a technology-enabled business platform. Built with React and Chakra UI following Figma designs. The application lets support staff look up companies by slug and view merged customer data pulled from multiple mock APIs (Aggregator, Legacy CRM, and ConfigCat), and compare configuration values across systems to quickly diagnose account issues. As part of a 4-person team, I led implementation of the configuration tables and reusable data-table components, handled row rendering and layout systems, and contributed to risk planning and API integration.
+        </li>
+        <li>
+          <strong>To-Do List App</strong> — A responsive to-do list web app built with HTML, CSS, and JavaScript, developed using AI coding tools. Supports adding, completing, deleting, and filtering tasks (All / Active / Completed). <a href="https://github.com/shuang1219/todo-list-app" target="_blank">View on GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+  </div>
 </body>
 </html>
